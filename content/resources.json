@@ -1,0 +1,113 @@
+{
+  "national": [
+    {
+      "title": "2025 BSR guideline for the prescription and monitoring of conventional synthetic DMARDs",
+      "org": "British Society for Rheumatology",
+      "year": "2025",
+      "url": "https://doi.org/10.1093/rheumatology/keaf522",
+      "status": "current",
+      "note": "Supersedes the regional csDMARD monitoring content where they differ. Adds voclosporin and risk-adapted methotrexate liver monitoring. Covers children and adults; excludes biologics and JAK inhibitors."
+    },
+    {
+      "title": "BSR biologic DMARD safety guidelines in inflammatory arthritis",
+      "org": "British Society for Rheumatology",
+      "year": "2019",
+      "url": "https://academic.oup.com/rheumatology/article/58/2/e3/5076446",
+      "status": "update-due",
+      "note": "Update expected in 2026. Watch this space."
+    },
+    {
+      "title": "BSR guideline on prescribing drugs in pregnancy and breastfeeding",
+      "org": "British Society for Rheumatology",
+      "year": "2022/23",
+      "url": "https://academic.oup.com/rheumatology/article/62/4/e48/6783012",
+      "status": "current",
+      "note": "Source for the pregnancy compatibility table."
+    },
+    {
+      "title": "Immunisation against infectious disease (the Green Book)",
+      "org": "UK Health Security Agency",
+      "year": "live",
+      "url": "https://www.gov.uk/government/collections/immunisation-against-infectious-disease-the-green-book",
+      "status": "current",
+      "note": "Live vaccine contraindications in immunosuppression; shingles, pneumococcal, influenza and COVID-19 chapters."
+    },
+    {
+      "title": "JAK inhibitors: measures to reduce risk of MACE, malignancy, VTE, serious infections and mortality",
+      "org": "MHRA Drug Safety Update",
+      "year": "April 2023",
+      "url": "https://www.gov.uk/drug-safety-update/janus-kinase-jak-inhibitors-new-measures-to-reduce-risks-of-major-cardiovascular-events-malignancy-venous-thromboembolism-serious-infections-and-increased-mortality",
+      "status": "current",
+      "note": "Use only if no suitable alternative in patients ≥65, current or past long-time smokers, or with other CV or malignancy risk factors."
+    },
+    {
+      "title": "Steroid Emergency Card: early recognition and treatment of adrenal crisis",
+      "org": "NHS England / Specialist Pharmacy Service",
+      "year": "2020",
+      "url": "https://www.sps.nhs.uk/articles/steroid-emergency-card-to-support-early-recognition-and-treatment-of-adrenal-crisis-in-adults/",
+      "status": "current",
+      "note": "National Patient Safety Alert."
+    },
+    {
+      "title": "Summaries of Product Characteristics (SmPC)",
+      "org": "electronic medicines compendium (eMC)",
+      "year": "live",
+      "url": "https://www.medicines.org.uk/emc/",
+      "status": "current",
+      "note": "Full licensed prescribing information for every drug."
+    },
+    {
+      "title": "NICE technology appraisals",
+      "org": "NICE",
+      "year": "live",
+      "url": "https://www.nice.org.uk/guidance/published?ngt=Technology%20appraisal%20guidance",
+      "status": "current",
+      "note": "Funding criteria for biologic and targeted synthetic DMARDs."
+    }
+  ],
+  "sharedCare": [
+    {
+      "region": "Humber & North Yorkshire",
+      "body": "HNY Area Prescribing Committee",
+      "url": "https://humberandnorthyorkshire.org.uk/area-prescribing-committee-apc/area-prescribing-committee-apc-approved-documents/",
+      "how": "Open the page and expand the “Shared care” section.",
+      "known": [
+        "Azathioprine / mercaptopurine: RDTC shared care protocol v1.1 (July 2024)",
+        "Hydroxychloroquine: RDTC shared care protocol (HNY ICB, draft)"
+      ]
+    },
+    {
+      "region": "West Yorkshire",
+      "body": "West Yorkshire ICB: medicines guidelines",
+      "url": "https://www.westyorkshire.icb.nhs.uk/documents/medicines-guidelines",
+      "how": "West Yorkshire APC is harmonising guidance. Until that's done, use the legacy APC site for your area (Leeds, or South West Yorkshire: Bradford & Craven, Calderdale, Kirklees, Wakefield).",
+      "known": [],
+      "todo": "Confirm the West Yorkshire DMARD shared care link."
+    }
+  ],
+  "gaps": [
+    { "id": "deucravacitinib", "title": "Deucravacitinib", "subtitle": "Sotyktu®", "group": "Targeted synthetic (tsDMARDs)", "why": "TYK2 inhibitor (psoriasis; PsA trials ongoing). Not in the regional guideline." },
+    { "id": "bimekizumab", "title": "Bimekizumab", "subtitle": "Bimzelx®", "group": "Biologics (bDMARDs)", "why": "IL-17A/F inhibitor licensed for PsA and axSpA. Not in the regional guideline." },
+    { "id": "voclosporin", "title": "Voclosporin", "subtitle": "Lupkynis®", "group": "csDMARDs", "why": "Calcineurin inhibitor for lupus nephritis. Newly covered by the BSR 2025 csDMARD guideline." },
+    { "id": "anifrolumab", "title": "Anifrolumab", "subtitle": "Saphnelo®", "group": "Biologics (bDMARDs)", "why": "Type I interferon receptor antibody for SLE. Not in the regional guideline." },
+    { "id": "tacrolimus", "title": "Tacrolimus", "subtitle": "", "group": "csDMARDs", "why": "Covered by the BSR 2025 csDMARD guideline. No regional page." }
+  ],
+  "evidence": {
+    "statement": "Studies are selected by the clinical editorial group. The funder has no input into which studies are listed or how they are summarised.",
+    "items": [
+      {
+        "title": "ORAL Surveillance: tofacitinib vs TNF inhibitor safety in RA (Ytterberg et al., NEJM 2022)",
+        "why": "The basis for the MHRA/EMA JAK inhibitor restrictions.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Ytterberg+Cardiovascular+and+Cancer+Risk+with+Tofacitinib+in+Rheumatoid+Arthritis"
+      },
+      { "title": "Slot 2: to be chosen by the editorial group", "why": "", "url": "" },
+      { "title": "Slot 3: to be chosen by the editorial group", "why": "", "url": "" }
+    ]
+  },
+  "status": {
+    "csDMARDs": "Regional guideline 2024. Being checked against BSR 2025, which takes precedence where they differ.",
+    "Biologics (bDMARDs)": "Regional guideline 2024, based on BSR biologic safety guidance. BSR update expected 2026.",
+    "Targeted synthetic (tsDMARDs)": "Regional guideline 2024. Not covered by BSR guidance; locally written content. Check MHRA JAK safety advice.",
+    "legacy": ["injectable-gold", "penicillamine"]
+  }
+}
