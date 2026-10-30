@@ -33,7 +33,7 @@ function bind(el, form, update) {
   update();
 }
 function pageLink(state, id, text) {
-  return state.pages.has(id) ? `<a href="#/page/${id}">${text || "Guideline page: " + esc(state.pages.get(id).title)}</a>` : "";
+  return state.pages.has(id) ? `<a href="#page--${id}">${text || "Guideline page: " + esc(state.pages.get(id).title)}</a>` : "";
 }
 
 // ---------- 1. Blood result checker ----------
@@ -227,7 +227,7 @@ function renderSteroids(el, params, state) {
         <p class="small muted">Tailor the speed of reduction to disease activity and comorbidities. Below about 5 mg, consider the risk of adrenal insufficiency.</p>
         <table class="data"><thead><tr><th>From</th><th>Day</th><th>Daily dose</th></tr></thead><tbody>
         ${rows.map((r) => `<tr><td>${date(r.date)}</td><td>${r.day}</td><td>${fmt(r.dose, 1)} mg</td></tr>`).join("")}
-        </tbody></table><div class="actions"><button class="btn" type="button" onclick="window.print()">Print</button></div></div>` : ""}`;
+        </tbody></table></div>` : ""}`;
   });
 }
 
@@ -298,41 +298,33 @@ function renderSchedule(el, params, state) {
       <table class="data"><thead><tr><th>#</th><th>Date</th><th>Phase</th></tr></thead><tbody>
       ${rows.map((r, i) => `<tr><td>${i + 1}</td><td>${date(r.date)}</td><td>${esc(r.phase)}</td></tr>`).join("")}
       </tbody></table>
-      <div class="actions"><button class="btn" type="button" id="ics">Add to calendar (.ics)</button><button class="btn" type="button" onclick="window.print()">Print</button></div>
+      <div class="actions"><button class="btn" type="button" id="copy">Copy dates</button><span id="copied" class="small muted" role="status"></span></div>
       <p class="small">${p ? pageLink(state, p) : ""}</p></div>` : '<p class="muted">Enter a start date.</p>';
-    el.querySelector("#ics")?.addEventListener("click", () => downloadIcs(rows));
+    el.querySelector("#copy")?.addEventListener("click", () => copyDates(rows, el));
   });
 }
 
-function downloadIcs(rows) {
-  const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
-  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//DMARD Guide//EN"];
-  rows.forEach((r, i) => {
-    const d = isoDate(r.date).replace(/-/g, "");
-    lines.push("BEGIN:VEVENT", `UID:dmard-${d}-${i}@dmard-guide`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${d}`,
-      "SUMMARY:DMARD blood test", `DESCRIPTION:${r.phase} monitoring`, "END:VEVENT");
-  });
-  lines.push("END:VCALENDAR");
-  const url = URL.createObjectURL(new Blob([lines.join("\r\n")], { type: "text/calendar" }));
-  const a = Object.assign(document.createElement("a"), { href: url, download: "dmard-monitoring.ics" });
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+function copyDates(rows, el) {
+  const text = rows.map((r, i) => `${i + 1}. ${date(r.date)} (${r.phase})`).join("\n");
+  const done = (msg) => { el.querySelector("#copied").textContent = msg; };
+  navigator.clipboard?.writeText(text).then(() => done("Copied to clipboard."), () => done("Copy was blocked; select the table to copy it."))
+    ?? done("Copy isn't available here; select the table to copy it.");
 }
 
 // ---------- Registry ----------
 
 export const CALCS = [
-  { id: "bloods", icon: "🩸", title: "Blood result checker", desc: "Check FBC, LFT and other results against each drug's stop criteria", render: renderBloods },
+  { id: "bloods", icon: "◍", title: "Blood result checker", desc: "Check FBC, LFT and other results against each drug's stop criteria", render: renderBloods },
   { id: "renal", icon: "⚗", title: "Renal function & dosing", desc: "CrCl (Cockcroft–Gault), eGFR, and renal dose advice", render: renderRenal },
   { id: "dosing", icon: "⚖", title: "Weight-based dosing", desc: "HCQ mg/kg, azathioprine, ciclosporin, tocilizumab, infliximab, methotrexate tablets", render: renderDosing },
   { id: "steroids", icon: "◐", title: "Steroid converter & taper", desc: "Equivalent doses, bone/adrenal/vaccine flags, taper plan", render: renderSteroids },
   { id: "periop", icon: "✚", title: "Peri-operative planner", desc: "When to schedule surgery after the last biologic or JAK dose", render: renderPeriop },
-  { id: "schedule", icon: "📅", title: "Monitoring schedule", desc: "Blood test dates for csDMARDs, with calendar export", render: renderSchedule },
+  { id: "schedule", icon: "▦", title: "Monitoring schedule", desc: "Blood test dates for csDMARDs, with calendar export", render: renderSchedule },
 ];
 
 export function renderCalc(main, calc, params, state) {
   main.innerHTML = `
-    <div class="crumbs"><a href="#/calc">Calculators</a></div>
+    <div class="crumbs"><a href="#calc">Calculators</a></div>
     <h1>${esc(calc.title)}</h1>
     <div class="notice warn small calc-intro">Add-on tool. Prototype, not validated, and not a medical device. Always read the guideline text and SmPC and use clinical judgement. Nothing you enter is stored or sent.</div>
     <div id="calc-body"></div>`;

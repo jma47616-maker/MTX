@@ -19,7 +19,7 @@ See [PLAN.md](PLAN.md) for the project plan and governance steps.
 | Shared care | Links to the HNY and West Yorkshire APC pages |
 | National guidance | BSR 2025 csDMARD, BSR biologic safety (update due 2026), BSR pregnancy, Green Book, MHRA JAK advice, Steroid Emergency Card, eMC, NICE |
 | Evidence | Studies chosen by the editorial group (2 of 3 slots still empty) |
-| **Calculators (add-on)** | Blood result checker · renal function & renal dose advice · weight-based dosing · steroid converter, safety flags & taper · peri-operative planner · monitoring schedule with calendar export |
+| **Calculators (add-on)** | Blood result checker · renal function & renal dose advice · weight-based dosing · steroid converter, safety flags & taper · peri-operative planner · monitoring schedule (copy dates) |
 
 Each drug page links to the calculators that apply to it, with that drug already selected.
 
@@ -53,6 +53,16 @@ so installed copies pick up the update.
 
 Calculator thresholds live in `js/calc-core.js`. Each one names its source
 section, and they must be kept in step with the guideline text.
+
+## Single-file build (claude.ai Artifact)
+
+```bash
+python3 tools/build_artifact.py   # writes dist/yorkshire-dmard-guide.html
+```
+
+This inlines the CSS, JS, content and images into one file. It runs without a
+service worker, which is why the in-app links use plain `#name` fragments
+(e.g. `#page--methotrexate`, `#calc--bloods--methotrexate`).
 
 ## Deploying
 
