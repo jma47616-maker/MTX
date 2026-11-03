@@ -1,0 +1,328 @@
+{
+  "source": {
+    "title": "British Society for Rheumatology guideline on prescribing drugs in pregnancy and breastfeeding: immunomodulatory anti-rheumatic drugs and corticosteroids",
+    "doi": "10.1093/rheumatology/keac551",
+    "year": "2023",
+    "org": "British Society for Rheumatology"
+  },
+  "drugs": {
+    "prednisolone": {
+      "name": "Prednisolone",
+      "preconception": "Compatible (GRADE 1B)",
+      "trimester1": "Compatible; preferred corticosteroid in pregnancy (GRADE 1B); dose <20 mg/day where possible, tapered to minimum effective dose (GRADE 1C)",
+      "trimester23": "Compatible; preferred corticosteroid in pregnancy (GRADE 1B); dose <20 mg/day where possible, tapered to minimum effective dose (GRADE 1C)",
+      "breastfeeding": "Compatible (GRADE 1B)",
+      "paternal": "Compatible (GRADE 1B)",
+      "note": "Requires shared care with obstetric teams to monitor maternal blood pressure and blood glucose; use with pregnancy-compatible steroid-sparing drugs. Methylprednisolone has similar placental transfer and would be expected to be compatible with pregnancy and breastmilk exposure (GRADE 2C)."
+    },
+    "methotrexate": {
+      "name": "Methotrexate",
+      "preconception": "Avoid; stop at least 1 month before planned conception and switch to a pregnancy-compatible drug (GRADE 1A)",
+      "trimester1": "Avoid at any dose (GRADE 1A); in unintended pregnancy on low-dose (<=25 mg/week) MTX there is minimal risk to the foetus: stop immediately, continue folic acid 5 mg/day and consider early referral to foetal medicine (GRADE 1C)",
+      "trimester23": "Avoid at any dose (GRADE 1A)",
+      "breastfeeding": "Not recommended; theoretical risks and insufficient data (GRADE 2C)",
+      "paternal": "Compatible at low dose (<=25 mg/week) (GRADE 1B)",
+      "note": "If low-dose MTX taken within 1 month before conception, continue folic acid 5 mg/day up to 12 weeks of pregnancy (GRADE 1B). Termination of pregnancy is not routinely recommended for low-dose MTX exposure."
+    },
+    "sulfasalazine": {
+      "name": "Sulfasalazine",
+      "preconception": "Compatible, with folic acid 5 mg/day in the periconception period (GRADE 1B)",
+      "trimester1": "Compatible, with folic acid 5 mg/day during the first trimester (GRADE 1B)",
+      "trimester23": "Compatible (GRADE 1B)",
+      "breastfeeding": "Compatible in healthy, full-term infants (GRADE 1C)",
+      "paternal": "Compatible; may reduce male fertility - consider stopping only if conception delayed >12 months, alongside investigation of other causes of infertility (GRADE 1C)",
+      "note": "Avoid breastmilk exposure in ill, stressed or premature infants, and in infants with hyperbilirubinaemia or G6PD deficiency."
+    },
+    "hydroxychloroquine": {
+      "name": "Hydroxychloroquine",
+      "preconception": "Compatible; antimalarial of choice in women planning pregnancy (GRADE 1B)",
+      "trimester1": "Compatible; continue at dose <=400 mg/day (GRADE 1B)",
+      "trimester23": "Compatible; continue at dose <=400 mg/day (GRADE 1B)",
+      "breastfeeding": "Compatible (GRADE 1B)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Discontinuation in pregnancy may increase risk of disease flares and foetal loss."
+    },
+    "leflunomide": {
+      "name": "Leflunomide",
+      "preconception": "Avoid; stop, undergo standard cholestyramine washout and switch to a pregnancy-compatible alternative (GRADE 1B)",
+      "trimester1": "Not recommended; insufficient evidence to support use (GRADE 1B); if unintended conception, stop immediately, give cholestyramine washout and consider early referral to foetal medicine (GRADE 1B)",
+      "trimester23": "Not recommended; insufficient evidence to support use (GRADE 1B)",
+      "breastfeeding": "Not recommended (GRADE 1C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "LEF may not be a human teratogen, but there remains insufficient evidence to support use at conception or during pregnancy."
+    },
+    "azathioprine": {
+      "name": "Azathioprine",
+      "preconception": "Compatible (GRADE 1B)",
+      "trimester1": "Compatible (GRADE 1B)",
+      "trimester23": "Compatible (GRADE 1B)",
+      "breastfeeding": "Compatible (GRADE 2C)",
+      "paternal": "Compatible (GRADE 1B)",
+      "note": "No clear evidence for a dose limit; use at an effective dose with blood monitoring per local guidelines."
+    },
+    "mycophenolate-mofetil": {
+      "name": "Mycophenolate mofetil",
+      "preconception": "Contraindicated; avoid in women planning pregnancy or switch to a pregnancy-compatible alternative at least 6 weeks before attempting to conceive (GRADE 1B)",
+      "trimester1": "Contraindicated (GRADE 1B); if unintended conception, switch to a pregnancy-compatible alternative and refer to local experts for risk assessment (GRADE 1B)",
+      "trimester23": "Contraindicated (GRADE 1B)",
+      "breastfeeding": "Not recommended (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Known teratogen (MMF embryopathy) with increased risk of miscarriage; women of childbearing potential need adequate contraception."
+    },
+    "cyclosporine": {
+      "name": "Ciclosporin (cyclosporine)",
+      "preconception": "Compatible (GRADE 1B)",
+      "trimester1": "Compatible, with monitoring of maternal blood pressure, renal function, blood glucose and drug levels (GRADE 1B)",
+      "trimester23": "Compatible, with monitoring of maternal blood pressure, renal function, blood glucose and drug levels (GRADE 1B)",
+      "breastfeeding": "Compatible (GRADE 2C)",
+      "paternal": "Compatible (GRADE 1C)",
+      "note": "Use the lowest effective dose."
+    },
+    "tacrolimus": {
+      "name": "Tacrolimus",
+      "preconception": "Compatible (GRADE 2B)",
+      "trimester1": "Compatible, with monitoring of maternal blood pressure, renal function, blood glucose and drug levels (GRADE 2B)",
+      "trimester23": "Compatible, with monitoring of maternal blood pressure, renal function, blood glucose and drug levels (GRADE 2B)",
+      "breastfeeding": "Compatible (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": null
+    },
+    "cyclophosphamide": {
+      "name": "Cyclophosphamide",
+      "preconception": "Exceptional circumstances only (known teratogen and gonadotoxic) (GRADE 1B)",
+      "trimester1": "Only in severe life/organ-threatening maternal disease with appreciable risk of maternal and foetal morbidity and mortality without this therapy (GRADE 1B)",
+      "trimester23": "Only in severe life/organ-threatening maternal disease with appreciable risk of maternal and foetal morbidity and mortality without this therapy (GRADE 1B)",
+      "breastfeeding": "Not recommended (GRADE 2C)",
+      "paternal": "Not recommended; semen cryopreservation recommended for men before exposure because of adverse effect on male fertility (GRADE 1C)",
+      "note": null
+    },
+    "infliximab": {
+      "name": "Infliximab",
+      "preconception": "Compatible (GRADE 1B); women with no/low disease activity on INF/ADA/GOL do not need to switch to certolizumab before or during pregnancy",
+      "trimester1": "Compatible (GRADE 1B)",
+      "trimester23": "Compatible (GRADE 1B); if low risk of flare, could stop at 20 weeks so a full-term infant can have a normal vaccination schedule, otherwise continue and avoid infant live vaccines until 6 months",
+      "breastfeeding": "Compatible (GRADE 1C)",
+      "paternal": "Compatible (GRADE 1C)",
+      "note": "May be continued throughout pregnancy to maintain maternal disease control; if continued, avoid live vaccines in infant until 6 months of age (GRADE 1B). If stopped in pregnancy, restart as soon as practical post-partum regardless of breastfeeding status (GRADE 1C). Recommendations apply to equivalent licensed biosimilars."
+    },
+    "etanercept": {
+      "name": "Etanercept",
+      "preconception": "Compatible (GRADE 1B); women with no/low disease activity on INF/ADA/GOL do not need to switch to certolizumab before or during pregnancy",
+      "trimester1": "Compatible (GRADE 1B)",
+      "trimester23": "Compatible (GRADE 1B); if low risk of flare, could stop at 32 weeks so a full-term infant can have a normal vaccination schedule, otherwise continue and avoid infant live vaccines until 6 months",
+      "breastfeeding": "Compatible (GRADE 1C)",
+      "paternal": "Compatible (GRADE 1C)",
+      "note": "May be continued throughout pregnancy to maintain maternal disease control; if continued, avoid live vaccines in infant until 6 months of age (GRADE 1B). If stopped in pregnancy, restart as soon as practical post-partum regardless of breastfeeding status (GRADE 1C). Recommendations apply to equivalent licensed biosimilars."
+    },
+    "adalimumab": {
+      "name": "Adalimumab",
+      "preconception": "Compatible (GRADE 1B); women with no/low disease activity on INF/ADA/GOL do not need to switch to certolizumab before or during pregnancy",
+      "trimester1": "Compatible (GRADE 1B)",
+      "trimester23": "Compatible (GRADE 1B); if low risk of flare, could stop at 28 weeks so a full-term infant can have a normal vaccination schedule, otherwise continue and avoid infant live vaccines until 6 months",
+      "breastfeeding": "Compatible (GRADE 1C)",
+      "paternal": "Compatible (GRADE 1C)",
+      "note": "May be continued throughout pregnancy to maintain maternal disease control; if continued, avoid live vaccines in infant until 6 months of age (GRADE 1B). If stopped in pregnancy, restart as soon as practical post-partum regardless of breastfeeding status (GRADE 1C). Recommendations apply to equivalent licensed biosimilars."
+    },
+    "certolizumab-pegol": {
+      "name": "Certolizumab pegol",
+      "preconception": "Compatible (GRADE 1B)",
+      "trimester1": "Compatible (GRADE 1B)",
+      "trimester23": "Compatible in all three trimesters; no to minimal placental transfer; no alteration to infant vaccination schedule required (GRADE 1B)",
+      "breastfeeding": "Compatible (GRADE 1C)",
+      "paternal": "Compatible (GRADE 1C)",
+      "note": "Women established on INF/ADA/GOL with no/low disease activity do not need to be switched to certolizumab before or during pregnancy (GRADE 1B). May be continued throughout pregnancy to maintain maternal disease control; if continued, avoid live vaccines in infant until 6 months of age (GRADE 1B). If stopped in pregnancy, restart as soon as practical post-partum regardless of breastfeeding status (GRADE 1C). Recommendations apply to equivalent licensed biosimilars."
+    },
+    "golimumab": {
+      "name": "Golimumab",
+      "preconception": "Compatible (GRADE 1B); women with no/low disease activity on INF/ADA/GOL do not need to switch to certolizumab before or during pregnancy",
+      "trimester1": "Compatible (GRADE 1B)",
+      "trimester23": "Compatible (GRADE 1B); if low risk of flare, could stop at 28 weeks so a full-term infant can have a normal vaccination schedule, otherwise continue and avoid infant live vaccines until 6 months",
+      "breastfeeding": "Compatible (GRADE 1C)",
+      "paternal": "Compatible (GRADE 1C)",
+      "note": "May be continued throughout pregnancy to maintain maternal disease control; if continued, avoid live vaccines in infant until 6 months of age (GRADE 1B). If stopped in pregnancy, restart as soon as practical post-partum regardless of breastfeeding status (GRADE 1C). Recommendations apply to equivalent licensed biosimilars."
+    },
+    "rituximab": {
+      "name": "Rituximab",
+      "preconception": "Consider stopping at conception (GRADE 2C); limited evidence has not shown teratogenicity but insufficient evidence to be confident it is compatible with pregnancy",
+      "trimester1": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C)",
+      "trimester23": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); if used in third trimester, avoid live vaccines in infant until 6 months of age",
+      "breastfeeding": "Compatible, based on limited evidence (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Guideline recommendations are made at class level (rituximab-specific recommendations). All biologic DMARDs may be continued throughout pregnancy if required to control active/severe maternal disease (GRADE 1B)."
+    },
+    "tocilizumab": {
+      "name": "Tocilizumab",
+      "preconception": "Consider stopping at conception (GRADE 2C); limited evidence has not shown teratogenicity but insufficient evidence to be confident it is compatible with pregnancy",
+      "trimester1": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); any exposure during pregnancy is unlikely to be harmful",
+      "trimester23": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); if used in third trimester, avoid live vaccines in infant until 6 months of age",
+      "breastfeeding": "Compatible, based on limited evidence (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Guideline recommendations are made at class level (IL-6 inhibitors). All biologic DMARDs may be continued throughout pregnancy if required to control active/severe maternal disease (GRADE 1B)."
+    },
+    "sarilumab": {
+      "name": "Sarilumab",
+      "preconception": "Consider stopping at conception (GRADE 2C); limited evidence has not shown teratogenicity but insufficient evidence to be confident it is compatible with pregnancy",
+      "trimester1": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); any exposure during pregnancy is unlikely to be harmful",
+      "trimester23": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); if used in third trimester, avoid live vaccines in infant until 6 months of age",
+      "breastfeeding": "Compatible, based on limited evidence (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Guideline recommendations are made at class level (IL-6 inhibitors). All biologic DMARDs may be continued throughout pregnancy if required to control active/severe maternal disease (GRADE 1B). No published papers on sarilumab met inclusion criteria; manufacturer data only (13 pregnancies, 7 miscarriages)."
+    },
+    "abatacept": {
+      "name": "Abatacept",
+      "preconception": "Consider stopping at conception (GRADE 2C); limited evidence has not shown teratogenicity but insufficient evidence to be confident it is compatible with pregnancy",
+      "trimester1": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); any exposure during pregnancy is unlikely to be harmful",
+      "trimester23": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); if used in third trimester, avoid live vaccines in infant until 6 months of age",
+      "breastfeeding": "Compatible, based on limited evidence (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Guideline recommendations are made at class level (abatacept-specific recommendations). All biologic DMARDs may be continued throughout pregnancy if required to control active/severe maternal disease (GRADE 1B)."
+    },
+    "anakinra": {
+      "name": "Anakinra",
+      "preconception": "Consider stopping at conception (GRADE 2C); limited evidence has not shown teratogenicity but insufficient evidence to be confident it is compatible with pregnancy",
+      "trimester1": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); any exposure during pregnancy is unlikely to be harmful",
+      "trimester23": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); if used in third trimester, avoid live vaccines in infant until 6 months of age",
+      "breastfeeding": "Compatible, based on limited evidence (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Guideline recommendations are made at class level (IL-1 inhibitors). All biologic DMARDs may be continued throughout pregnancy if required to control active/severe maternal disease (GRADE 1B). Two congenital renal anomalies and two cases of oligohydramnios reported; unclear whether related to anakinra or maternal hyperthermia."
+    },
+    "belimumab": {
+      "name": "Belimumab",
+      "preconception": "Consider stopping at conception (GRADE 2C); limited evidence has not shown teratogenicity but insufficient evidence to be confident it is compatible with pregnancy",
+      "trimester1": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); any exposure during pregnancy is unlikely to be harmful",
+      "trimester23": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); if used in third trimester, avoid live vaccines in infant until 6 months of age",
+      "breastfeeding": "Compatible, based on limited evidence (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Guideline recommendations are made at class level (belimumab-specific recommendations). All biologic DMARDs may be continued throughout pregnancy if required to control active/severe maternal disease (GRADE 1B)."
+    },
+    "secukinumab": {
+      "name": "Secukinumab",
+      "preconception": "Consider stopping at conception (GRADE 2C); limited evidence has not shown teratogenicity but insufficient evidence to be confident it is compatible with pregnancy",
+      "trimester1": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); any exposure during pregnancy is unlikely to be harmful",
+      "trimester23": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); if used in third trimester, avoid live vaccines in infant until 6 months of age",
+      "breastfeeding": "Compatible, based on limited evidence (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Guideline recommendations are made at class level (IL-17 inhibitors). All biologic DMARDs may be continued throughout pregnancy if required to control active/severe maternal disease (GRADE 1B)."
+    },
+    "ixekizumab": {
+      "name": "Ixekizumab",
+      "preconception": "Consider stopping at conception (GRADE 2C); limited evidence has not shown teratogenicity but insufficient evidence to be confident it is compatible with pregnancy",
+      "trimester1": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); any exposure during pregnancy is unlikely to be harmful",
+      "trimester23": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); if used in third trimester, avoid live vaccines in infant until 6 months of age",
+      "breastfeeding": "Compatible, based on limited evidence (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Guideline recommendations are made at class level (IL-17 inhibitors). All biologic DMARDs may be continued throughout pregnancy if required to control active/severe maternal disease (GRADE 1B). Information on ixekizumab specifically remains very limited (18 pregnancy exposures)."
+    },
+    "ustekinumab": {
+      "name": "Ustekinumab",
+      "preconception": "Consider stopping at conception (GRADE 2C); limited evidence has not shown teratogenicity but insufficient evidence to be confident it is compatible with pregnancy",
+      "trimester1": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); any exposure during pregnancy is unlikely to be harmful",
+      "trimester23": "Severe disease only if no other pregnancy-compatible drugs are suitable (GRADE 2C); if used in third trimester, avoid live vaccines in infant until 6 months of age",
+      "breastfeeding": "Compatible, based on limited evidence (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C); no paternal exposure data found for ustekinumab, class-level recommendation",
+      "note": "Guideline recommendations are made at class level (IL-12/23 inhibitors; ustekinumab is the only IL-12/23 inhibitor reviewed). All biologic DMARDs may be continued throughout pregnancy if required to control active/severe maternal disease (GRADE 1B)."
+    },
+    "guselkumab": {
+      "name": "Guselkumab",
+      "preconception": null,
+      "trimester1": null,
+      "trimester23": null,
+      "breastfeeding": null,
+      "paternal": null,
+      "note": "Not addressed in the guideline; the IL-12/23 inhibitor recommendations refer to ustekinumab only."
+    },
+    "risankizumab": {
+      "name": "Risankizumab",
+      "preconception": null,
+      "trimester1": null,
+      "trimester23": null,
+      "breastfeeding": null,
+      "paternal": null,
+      "note": "Not addressed in the guideline; the IL-12/23 inhibitor recommendations refer to ustekinumab only."
+    },
+    "apremilast": {
+      "name": "Apremilast",
+      "preconception": null,
+      "trimester1": null,
+      "trimester23": null,
+      "breastfeeding": null,
+      "paternal": null,
+      "note": "No studies found on apremilast in pregnancy; the guideline was unable to make any recommendations."
+    },
+    "tofacitinib": {
+      "name": "Tofacitinib",
+      "preconception": "Stop at least 2 weeks before planned conception (GRADE 2C); insufficient data to make a recommendation on use in pregnancy",
+      "trimester1": "Not recommended; insufficient data (GRADE 2C)",
+      "trimester23": "Not recommended; insufficient data (GRADE 2C)",
+      "breastfeeding": "Avoid; insufficient data and likely to transfer into breastmilk (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Class-level JAK inhibitor recommendation. Tofacitinib has the most data (116 pregnancy exposures; malformation rate in line with background risk)."
+    },
+    "baricitinib": {
+      "name": "Baricitinib",
+      "preconception": "Stop at least 2 weeks before planned conception (GRADE 2C); insufficient data to make a recommendation on use in pregnancy",
+      "trimester1": "Not recommended; insufficient data (GRADE 2C)",
+      "trimester23": "Not recommended; insufficient data (GRADE 2C)",
+      "breastfeeding": "Avoid; insufficient data and likely to transfer into breastmilk (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Class-level JAK inhibitor recommendation; baricitinib data limited to one case report and manufacturer trial data."
+    },
+    "upadacitinib": {
+      "name": "Upadacitinib",
+      "preconception": "Stop at least 2 weeks before planned conception (GRADE 2C); insufficient data to make a recommendation on use in pregnancy",
+      "trimester1": "Not recommended; insufficient data (GRADE 2C)",
+      "trimester23": "Not recommended; insufficient data (GRADE 2C)",
+      "breastfeeding": "Avoid; insufficient data and likely to transfer into breastmilk (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": "Class-level JAK inhibitor recommendation; no upadacitinib studies met inclusion criteria, manufacturer trial data only."
+    },
+    "filgotinib": {
+      "name": "Filgotinib",
+      "preconception": null,
+      "trimester1": null,
+      "trimester23": null,
+      "breastfeeding": null,
+      "paternal": null,
+      "note": "Not included in the guideline search (NICE-approved after the search window). The class-level JAK inhibitor recommendation (stop >=2 weeks before conception; avoid in pregnancy and breastfeeding; paternal exposure compatible) was based on tofacitinib, baricitinib and upadacitinib."
+    },
+    "ivig": {
+      "name": "Intravenous immunoglobulin",
+      "preconception": "Compatible (GRADE 1B)",
+      "trimester1": "Compatible (GRADE 1B)",
+      "trimester23": "Compatible (GRADE 1B)",
+      "breastfeeding": "Compatible (GRADE 2C)",
+      "paternal": "Compatible (GRADE 2C)",
+      "note": null
+    },
+    "nsaids": {
+      "name": "NSAIDs",
+      "preconception": null,
+      "trimester1": null,
+      "trimester23": null,
+      "breastfeeding": null,
+      "paternal": null,
+      "note": "Outside the scope of this guideline; NSAIDs and low-dose aspirin are covered in the companion BSR guideline on comorbidity medications used in rheumatology practice."
+    },
+    "colchicine": {
+      "name": "Colchicine",
+      "preconception": null,
+      "trimester1": null,
+      "trimester23": null,
+      "breastfeeding": null,
+      "paternal": null,
+      "note": "Not addressed in this guideline."
+    }
+  },
+  "general": [
+    "Pre-conception counselling should be addressed by all healthcare professionals, with referral to those with relevant expertise, to optimise disease control before pregnancy and advise on timing of pregnancy, drug therapy before/during/after pregnancy and contraception (GRADE 1A, SOA 99.5%).",
+    "If a woman is planning pregnancy, avoid pregnancy-incompatible drugs (GRADE 1A, SOA 100%).",
+    "The risks and benefits to mother and foetus of drug treatment to control maternal disease should be discussed and clearly documented by all healthcare professionals involved (GRADE 1A, SOA 99.5%).",
+    "Immunomodulatory drugs contraindicated in pregnancy should be switched to a pregnancy-compatible alternative in advance of conception to ensure disease control is maintained on the new medication (GRADE 1A, SOA 100%).",
+    "When no pregnancy-compatible drugs are suitable, control of severe/life-threatening maternal disease should take priority over concerns for potential foetal outcomes (GRADE 1B, SOA 99.0%).",
+    "All biologic DMARDs may be continued throughout pregnancy if required to control active/severe maternal disease (GRADE 1B, SOA 98.5%).",
+    "Infant immunisation schedules after in utero exposure to biologic DMARDs depend on timing of exposure, bioavailability and persistence of the drug, its mechanism of action, and live vaccines (GRADE 1C, SOA 99.5%).",
+    "Where possible, use the minimum effective dose of immunomodulatory drug or corticosteroid to maintain disease suppression; stopping the drug during pregnancy may be considered in women at low risk of flare on withdrawal (GRADE 1B, SOA 100%).",
+    "Paternal drug exposure has not convincingly been associated with adverse foetal development or pregnancy outcome; although evidence is weak, men taking rheumatological medicines should be reassured about the safety of conceiving (GRADE 2C, SOA 98.4%).",
+    "Recommendations use GRADE: strength 1 (strong) or 2 (weak); quality of evidence A (high), B (moderate) or C (low/very low); each with a strength of agreement (SOA) score. Recommendations were based on published evidence (search to January 2021), not licensing information, and apply to equivalent licensed biosimilars."
+  ]
+}

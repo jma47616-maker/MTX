@@ -1,0 +1,103 @@
+{
+  "_about": "National guidance layer shown alongside the regional monograph text. Each item carries `verified`: true when the wording was checked against the source text or an official summary; false when it comes from secondary reporting and must be checked against the full guideline by the editorial group before clinical use.",
+  "bsr2025": {
+    "title": "BSR guideline for the prescription and monitoring of csDMARDs",
+    "short": "BSR 2025",
+    "org": "British Society for Rheumatology",
+    "year": "2025",
+    "doi": "10.1093/rheumatology/keaf522",
+    "url": "https://doi.org/10.1093/rheumatology/keaf522",
+    "status": "Published 2025 (Rheumatology 65(2), keaf522). Replaces the 2017 BSR/BHPR guideline. Takes precedence over the regional text where they differ.",
+    "general": [
+      {"text": "Covers the whole life course (children, young people and adults). Biologics, JAK inhibitors and apremilast are out of scope and sit in the separate b/tsDMARD safety guideline.", "verified": true},
+      {"text": "Five sections: pre-treatment evaluation, drug-specific recommendations, comorbidities, blood-test monitoring, and shared care.", "verified": true},
+      {"text": "Blood monitoring is risk-adaptive rather than one schedule for everyone. Risk factors for csDMARD toxicity should be reassessed at least annually and the monitoring interval adjusted.", "verified": true},
+      {"text": "Baseline full blood count, renal profile and liver profile are strongly recommended before starting a csDMARD, to detect pre-existing cytopenia and organ impairment.", "verified": true},
+      {"text": "Monitoring in the first six months is less frequent than under the 2017 guidance. Secondary summaries describe a check at week 2 then monthly for the first 3 to 6 months in patients without added risk factors; confirm against Table 3 of the full text.", "verified": false},
+      {"text": "On a stable dose without risk factors: FBC, renal function, ALT/AST and albumin about every 3 months, with the interval extendable after an individual benefit–risk assessment (some stable low-risk patients may need only one or two tests a year).", "verified": false},
+      {"text": "Liver biochemical abnormalities are not an absolute contra-indication to any csDMARD, but a less hepatotoxic drug (for example sulfasalazine) is preferred and monitoring should be more cautious. Established fibrosis or cirrhosis: avoid hepatotoxic csDMARDs.", "verified": true},
+      {"text": "During a severe infection (needing intravenous therapy or admission) csDMARDs should be stopped temporarily until the patient has recovered.", "verified": true},
+      {"text": "Shared care: coordinated arrangements between rheumatology and primary care, with clear responsibilities for prescribing, monitoring and acting on results.", "verified": true},
+      {"text": "Voclosporin is newly included as a csDMARD (lupus nephritis).", "verified": true}
+    ],
+    "drugs": {
+      "methotrexate": [
+        {"text": "Adults with risk factors for liver disease: calculate a FIB-4 score before starting, followed by elastography (e.g. FibroScan) if indicated. This should not delay starting methotrexate.", "verified": true},
+        {"text": "After influenza or COVID-19 vaccination in adults, methotrexate may be withheld for up to two weeks if disease activity and flare risk allow. In children this is at the clinician's discretion.", "verified": true},
+        {"text": "Agree a fixed weekly dosing day and co-prescribe folic acid.", "verified": true}
+      ],
+      "hydroxychloroquine": [
+        {"text": "No routine blood monitoring is required (as in 2017). Monitoring is for retinopathy.", "verified": true},
+        {"text": "Everyone who has taken hydroxychloroquine for the equivalent of 5 years' continuous treatment or more should have annual retinopathy monitoring (GRADE 1B, 100% agreement).", "verified": true},
+        {"text": "Patients at high risk of retinopathy should have annual monitoring after 1 year of use.", "verified": true}
+      ],
+      "sulfasalazine": [
+        {"text": "Preferred where liver biochemistry is abnormal, as a less hepatotoxic csDMARD.", "verified": true},
+        {"text": "Sulfasalazine, mepacrine and apremilast join hydroxychloroquine as drugs where long-term routine blood monitoring is reduced or not required once stable; confirm the exact wording in the full text.", "verified": false}
+      ],
+      "leflunomide": [
+        {"text": "Blood pressure and weight monitoring continue alongside blood tests; confirm the intervals in Table 3 of the full text.", "verified": false}
+      ],
+      "azathioprine": [
+        {"text": "TPMT activity or genotype before starting remains recommended; confirm wording in the full text.", "verified": false}
+      ],
+      "mycophenolate-mofetil": [
+        {"text": "Standard risk-adaptive blood schedule applies; confirm any drug-specific points in the full text.", "verified": false}
+      ],
+      "cyclosporine": [
+        {"text": "Renal function and blood pressure are the key monitoring parameters; confirm the intervals in Table 3 of the full text.", "verified": false}
+      ],
+      "tacrolimus": [
+        {"text": "Included in the 2025 guideline. No regional page exists yet.", "verified": true}
+      ],
+      "voclosporin": [
+        {"text": "Newly included in the 2025 guideline (lupus nephritis). No regional page exists yet.", "verified": true}
+      ]
+    }
+  },
+  "bsr2019": {
+    "title": "BSR biologic DMARD safety guidelines in inflammatory arthritis",
+    "short": "BSR 2019",
+    "org": "British Society for Rheumatology",
+    "year": "2019",
+    "doi": "10.1093/rheumatology/key208",
+    "url": "https://academic.oup.com/rheumatology/article/58/2/e3/5076446",
+    "status": "Current national guidance for biologics. An update covering JAK inhibitors, IL-17 and IL-23 inhibitors and children/young people is in progress; the published scope (Ling et al., Rheumatol Adv Pract 2025, doi 10.1093/rap/rkaf104) says publication is expected 2026/27.",
+    "general": [
+      {"text": "Screen for tuberculosis (history, examination, chest radiograph and an interferon-gamma release assay or tuberculin test) before starting; treat latent TB before or alongside the biologic.", "verified": true},
+      {"text": "Screen for hepatitis B (surface antigen and core antibody), hepatitis C and, where risk factors exist, HIV before starting.", "verified": true},
+      {"text": "Check vaccination status before starting. Live vaccines are contra-indicated on treatment; give them at least 2 and ideally 4 weeks before starting. Inactivated vaccines (influenza, pneumococcal, COVID-19) are recommended.", "verified": true},
+      {"text": "Peri-operative: for elective surgery, plan the operation at the end of the dosing interval and restart once the wound has healed and there is no infection.", "verified": true},
+      {"text": "Biologics should be stopped during serious infection and withheld in active infection.", "verified": true},
+      {"text": "Patients with a previous malignancy: individual benefit–risk decision; rituximab may be preferred in some situations. Regular skin checks are advised.", "verified": true},
+      {"text": "The 2026/27 update will add: ANA testing before a first TNF inhibitor, prescribing choices in people at high infection, VTE or cardiovascular risk, CTD-ILD, drug-induced uveitis, psoriasis and IBD, updated peri-operative guidance (one dosing interval off; restart about 14 days after surgery) and vaccination intervals.", "verified": true}
+    ],
+    "drugs": {}
+  },
+  "mhra2023": {
+    "title": "MHRA Drug Safety Update: JAK inhibitors, new measures to reduce risks of MACE, malignancy, VTE, serious infections and mortality",
+    "short": "MHRA 2023",
+    "org": "Medicines and Healthcare products Regulatory Agency",
+    "year": "April 2023",
+    "url": "https://www.gov.uk/drug-safety-update",
+    "status": "Applies to baricitinib, filgotinib, tofacitinib and upadacitinib (and abrocitinib). Based on the ORAL Surveillance trial of tofacitinib against TNF inhibitors.",
+    "general": [
+      {"text": "Use a JAK inhibitor only if no suitable alternative is available in patients aged 65 or over, current or past long-time smokers, and those with other risk factors for cardiovascular disease or malignancy.", "verified": true},
+      {"text": "Use with caution in patients with risk factors for venous thromboembolism other than those above.", "verified": true},
+      {"text": "Consider a reduced dose in patients at risk where the product information allows (for example tofacitinib 5 mg twice daily, baricitinib 2 mg).", "verified": true},
+      {"text": "Periodic skin examination is recommended for all patients, particularly those at increased risk of skin cancer.", "verified": true},
+      {"text": "Counsel patients on the symptoms of blood clots, cardiovascular events and cancer and to seek help promptly.", "verified": true}
+    ],
+    "drugs": {}
+  },
+  "greenBook": {
+    "title": "Immunisation against infectious disease (the Green Book)",
+    "short": "Green Book",
+    "org": "UK Health Security Agency",
+    "url": "https://www.gov.uk/government/collections/immunisation-against-infectious-disease-the-green-book",
+    "general": [
+      {"text": "Live vaccines are contra-indicated in significant immunosuppression (for example methotrexate above 25 mg/week, azathioprine above 3 mg/kg/day, high-dose steroids, biologics and JAK inhibitors). Shingrix (recombinant, non-live) can be used instead of the live shingles vaccine.", "verified": true}
+    ],
+    "drugs": {}
+  }
+}

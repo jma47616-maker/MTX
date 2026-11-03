@@ -1,9 +1,9 @@
 // Offline support: cache the app shell and content, serve cache-first and
 // refresh in the background. Bump VERSION whenever content is rebuilt.
-const VERSION = "dmard-guide-v1";
+const VERSION = "dmard-guide-v2";
 const ASSETS = [
   "./", "index.html", "css/app.css", "js/app.js", "js/calculators.js", "js/calc-core.js",
-  "content/guideline.json", "content/resources.json", "content/media/image1.png", "content/media/image2.png",
+  "content/guideline.json", "content/resources.json", "content/national.json", "content/national-pregnancy.json", "content/media/image1.png", "content/media/image2.png",
   "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png",
 ];
 

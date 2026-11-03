@@ -460,6 +460,10 @@
      "label": "NICE Guidance",
      "html": "<blockquote>\n<p>RA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA375\"><u>TA375</u></a>\n<u>and</u> <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta195\"><u>TA195</u></a> <u>(after\nTNF failure if rituximab</u> <u>CI/failed)</u> , TA715</p>\n<p>JIA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta373\"><u>TA373</u></a></p>\n</blockquote>"
     },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Hypersensitivity to active substance or any excipient</p>\n<p>Severe and uncontrolled infections (sepsis/opportunistic)</p>\n<p>Manufacturer advise to avoid Live vaccines during and for 3 months\nafter last dose.</p>\n</blockquote>"
+    },
     "pregnancy-breastfeeding-manufacturer-advice": {
      "label": "Pregnancy & breastfeeding (Manufacturer advice)",
      "html": "<blockquote>\n<p>Women of childbearing potential should use contraception during\ntreatment and up to 14 weeks after the last dose of abatacept</p>\n<p>Not to be used in Pregnancy</p>\n<p>Breastfeeding to be discontinued while on treatment and up to 14\nweeks of the last dose</p>\n</blockquote>"
@@ -518,6 +522,10 @@
     "nice-guidance": {
      "label": "NICE Guidance",
      "html": "<blockquote>\n<p>RA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA375\"><u>TA375</u></a>\n<u>and <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta195\">TA195</a></u>\n<u>(after TNF failure if rituximab CI/failed)</u> , <u>TA715</u></p>\n<p>PsA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA199\"><u>TA199</u></a></p>\n<p>AS and nrAS: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta383\"><u>TA383</u></a></p>\n<p>JIA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta373\"><u>TA373</u></a></p>\n</blockquote>"
+    },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Hypersensitivity to the active substance or to any of the\nexcipients</p>\n<p>Active tuberculosis or other severe infections such as sepsis, and\nopportunistic infections</p>\n<p>Moderate to severe heart failure (NYHA class III/IV)</p>\n<p>Manufacturer advises avoid use with live vaccines</p>\n<p>* Patients treated with adalimumab should be given the special alert\ncard.</p>\n</blockquote>"
     },
     "elderly": {
      "label": "Elderly",
@@ -586,6 +594,10 @@
      "label": "Elderly",
      "html": "<blockquote>\n<p>No data available</p>\n</blockquote>"
     },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Serious hypersensitivity to active substance</p>\n<p>Active Infection /Tuberculosis</p>\n<p>Not to be initiated in neutropenia (ANC &lt;1.5 x\n10<sup>9</sup>/l)</p>\n<p>Not recommended in pre-existing malignancy</p>\n<p>Manufacturer advises avoid use with live vaccines</p>\n<p>*Drugs such as warfarin/phenytoin metabolized by CYP450 should\nconsider therapeutic monitoring or dose adjustment</p>\n</blockquote>"
+    },
     "pregnancy-breastfeeding-manufacture-advise": {
      "label": "Pregnancy & Breastfeeding: (Manufacture advise)",
      "html": "<blockquote>\n<p>No data for pregnancy, to avoid</p>\n<p>Breastfeeding safety unknown</p>\n</blockquote>"
@@ -632,6 +644,10 @@
     "nice-guidance": {
      "label": "NICE Guidance",
      "html": "<blockquote>\n<p>SLE: <u>TA752</u></p>\n</blockquote>"
+    },
+    "warnings-contra-indications-significant-drug-interactions": {
+     "label": "Warnings/Contra-indications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Live vaccines must not be given during or 30 days before commencing\ntreatment</p>\n<p>Hypersensitivity to the active substance or to any of the\nexcipients</p>\n<p>Chronic or severe or opportunistic infections (risk in active or\nlatent TB unknown)</p>\n<p>Malignant neoplasm within last 5 years.</p>\n<p>Acute hypersensitivity reactions reported to occur several hours\nafter completion and even the day after infusion.</p>\n<p>Do-not support co-administration of rituximab . Caution with\nco-administration with other B cell targeted therapy.</p>\n<p>Not recommended in active CNS lupus, hypogammaglobulinemia, history\nof organ transplant</p>\n</blockquote>"
     },
     "elderly": {
      "label": "Elderly",
@@ -692,6 +708,10 @@
      "label": "NICE Guidance",
      "html": "<blockquote>\n<p>RA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA375\"><u>TA375</u></a>\n<u>and <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta415\">TA415</a></u>\n<u>(after TNF failure if rituximab CI/failed)</u></p>\n<p>PsA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA445\"><u>TA445</u></a></p>\n<p>AS and nrAS: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta383\"><u>TA383</u></a></p>\n</blockquote>"
     },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Hypersensitivity to the active substance or to any of the\nexcipients</p>\n<p>Active tuberculosis (TB) or other severe infections such as sepsis,\nand opportunistic infections</p>\n<p>Moderate or severe heart failure (NYHA class III/IV)</p>\n<p>Latex allergy (needle shield inside the removable cap )</p>\n<p>Manufacturer advises avoid use with live vaccines</p>\n<p>*The datasheet contains a warning regarding a minor influence on the\nability to drive and use machines, (including vertigo, vision disorder\nand fatigue) may occur following administration</p>\n</blockquote>"
+    },
     "pregnancy-breastfeeding-manufacturer-advice": {
      "label": "Pregnancy & Breastfeeding (manufacturer advice)",
      "html": "<blockquote>\n<p>Compatible with all trimester of pregnancy, has no to minimal\nplacental transfer</p>\n<p>Can be used in breastfeeding</p>\n</blockquote>"
@@ -751,6 +771,10 @@
      "label": "NICE Guidance",
      "html": "<blockquote>\n<p>RA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA375\"><u>TA375</u></a>\n<u>and <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta195\">TA195</a></u>\n<u>(after TNF failure if rituximab CI/failed)</u> , <u>TA715</u></p>\n<p>PsA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA199\"><u>TA199</u></a></p>\n<p>AS and nrAS: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta383\"><u>TA383</u></a></p>\n<p>JIA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta373\"><u>TA373</u></a></p>\n</blockquote>"
     },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Hypersensitivity to the active substance or to any of the excipient\n(needle cover of prefilled syringe contains latex)</p>\n<p>Active tuberculosis** (TB) or other severe infections such as sepsis,\nand opportunistic infections</p>\n<p>Caution in patients with congestive cardiac failure.</p>\n<p>Caution in moderate to severe alcoholic hepatitis</p>\n<p>Manufacturer advises avoid use with live vaccines</p>\n</blockquote>\n<p>*Patients treated with etanercept should be given the Patient Alert\nCard.</p>\n<blockquote>\n<p>**May be preferred TNFi where previous TB contact but no active\ninfection.</p>\n</blockquote>"
+    },
     "pregnancy-breastfeeding-manufacturer-advice": {
      "label": "Pregnancy & breastfeeding (Manufacturer advice)",
      "html": "<blockquote>\n<p>Women of childbearing potential must use effective contraception\nduring treatment and up to 3 weeks discontinuation of therapy.</p>\n<p>Can be used in pregnancy if indicated. Administration of live\nvaccines to infants for 16 weeks after the mother’s last dose of</p>\n<p>Breastfeeding: risk/ benefit ratio between infant and mother</p>\n</blockquote>"
@@ -809,6 +833,10 @@
     "nice-guidance": {
      "label": "NICE Guidance",
      "html": "<blockquote>\n<p>RA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA375\"><u>TA375;</u></a> <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta225\"><u>TA225</u></a> <u>(after\nTNF failure if rituximab CI/failed)</u></p>\n<p>PsA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA220\"><u>TA220</u></a> AS: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta383\"><u>TA383</u></a> nrAS: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta497\"><u>TA497</u></a></p>\n</blockquote>"
+    },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Hypersensitivity to the active substance or to any of the excipients\n- including latex sensitivity (golimumab pen)</p>\n<p>Active tuberculosis (TB) or other severe infections such as sepsis,\nand opportunistic infections</p>\n<p>Moderate or severe heart failure (NYHA class III/IV)</p>\n<p>Contains Sorbitol - not in hereditary problems with fructose\nintolerance.</p>\n<p>Caution in patients with previous malignancy or new malignancy</p>\n<p>Manufacturer advises avoid use with live vaccines</p>\n</blockquote>"
     },
     "elderly": {
      "label": "Elderly",
@@ -877,6 +905,10 @@
      "label": "Elderly",
      "html": "<blockquote>\n<p>No dose adjustment</p>\n</blockquote>"
     },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Serious hypersensitivity to active substance</p>\n<p>Active Infection /Tuberculosis</p>\n<p>Caution if history of chronic infection</p>\n<p>Manufacturer advises avoid use with live vaccines</p>\n</blockquote>"
+    },
     "pregnancy-breastfeeding-manufacture-advise": {
      "label": "Pregnancy & Breastfeeding: (Manufacture advise)",
      "html": "<blockquote>\n<p>Women of childbearing potential to use an effective contraception\nduring treatment and for at least 12 weeks after treatment.</p>\n<p>No data for pregnancy, to avoid</p>\n<p>Breastfeeding safety unknown</p>\n</blockquote>"
@@ -927,6 +959,10 @@
     "nice-guidance": {
      "label": "NICE Guidance",
      "html": "<blockquote>\n<p>RA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA375\"><u>TA375</u></a>\n<u>and <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta195\">TA195</a></u>\n<u>(after TNF failure if rituximab CI/failed)</u> , <u>TA715</u></p>\n<p>PsA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA199\"><u>TA199</u></a></p>\n<p>AS: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta383\"><u>TA383</u></a></p>\n</blockquote>"
+    },
+    "warnings-contra-indications-significant-drug-interactions": {
+     "label": "Warnings/Contra-indications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Hypersensitivity to the active substance or to any of the excipients\n(including other murine proteins)</p>\n<p>.Active tuberculosis or other severe infections such as sepsis, and\nopportunistic infections</p>\n</blockquote>\n<p>Moderate to severe heart failure (NYHA class III/IV)</p>\n<p>Manufacturer advises avoid use with live vaccines</p>\n<p>Risk of invasive fungal infection</p>\n<p>Caution in patients with previous malignancy</p>\n<blockquote>\n<p>*Patients treated with infliximab should be given the package leaflet\nand the special Alert card.</p>\n<p>Infusion reactions may be increased when combined with\nleflunomide</p>\n</blockquote>"
     },
     "elderly": {
      "label": "Elderly",
@@ -991,6 +1027,10 @@
      "label": "Elderly",
      "html": "<blockquote>\n<p>No dose adjustment</p>\n</blockquote>"
     },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>C/I Active Infection /Tuberculosis</p>\n<p>Increased risk infection - URTI, candidiasis and conjunctivitis</p>\n<p>Caution if history of chronic infection</p>\n<p>Risk hypersensitivity reactions (can be 10-14 days post\ninjection)</p>\n<p>May cause or exacerbate Inflammatory bowel disease</p>\n<p>May cause neutropenia and/or thrombocytopenia</p>\n<p>Manufacturer advises avoid use with live vaccines</p>\n</blockquote>"
+    },
     "pregnancy-breastfeeding-manufacture-advise": {
      "label": "Pregnancy & Breastfeeding: (Manufacture advise)",
      "html": "<blockquote>\n<p>Women of childbearing potential to use an effective contraception\nduring treatment and for at least 10 weeks after treatment.</p>\n<p>Limited evidence for pregnancy</p>\n<p>Breastfeeding safety unknown</p>\n</blockquote>"
@@ -1050,6 +1090,10 @@
      "label": "Elderly",
      "html": "<blockquote>\n<p>No dose adjustment</p>\n</blockquote>"
     },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Serious hypersensitivity to active substance</p>\n<p>Active Infection /Tuberculosis</p>\n<p>Caution if history of chronic infection /recurrent infection</p>\n<p>Manufacturer advises avoid use with live vaccines , to wait 4 weeks\nprior to treatment and at least 21 weeks after treatment</p>\n</blockquote>"
+    },
     "pregnancy-breastfeeding-manufacture-advise": {
      "label": "Pregnancy & Breastfeeding: (Manufacture advise)",
      "html": "<blockquote>\n<p>Women of childbearing potential to use an effective contraception\nduring treatment and for at least 21 weeks after treatment.</p>\n<p>No data for pregnancy, to avoid</p>\n<p>Breastfeeding safety unknown</p>\n</blockquote>"
@@ -1100,6 +1144,10 @@
     "nice-guidance-nhs-commission": {
      "label": "NICE Guidance/NHS Commission",
      "html": "<blockquote>\n<p>RA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta195\"><u>TA195</u></a></p>\n<p>Vasculitis: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta308\"><u>TA308</u></a></p>\n<p>SLE: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.england.nhs.uk/wp-content/uploads/2013/09/a13-psa.pdf\"><u>Clinical\nCommissioning Policy: Rituximab for the treatment of</u></a></p>\n<p><a target=\"_blank\" rel=\"noopener\" href=\"https://www.england.nhs.uk/wp-content/uploads/2013/09/a13-psa.pdf\"><u>Systemic\nLupus Erythematosus (SLE),</u></a> September 2013: NHS England</p>\n<p><u>NHSE Clinical Commissioning policy: Rituximab for refractory\nsystemic lupus Erythematosus (SLE) in adults and post pubescent children\n(200402P)</u></p>\n</blockquote>"
+    },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Hypersensitivity to the active substance/excipients (incl. murine\nproteins)</p>\n<p>Severe heart failure (NYHA IV) or severe, uncontrolled cardiac\ndisease</p>\n<p>Active, severe infections</p>\n<p>Severely immunocompromised</p>\n<p>Prophylaxis requirements for <em>Pneumocyctis jirovecii</em></p>\n<p>Live vaccination 4 weeks prior to commencing therapy</p>\n</blockquote>"
     },
     "elderly": {
      "label": "Elderly",
@@ -1164,6 +1212,10 @@
      "label": "Renal/Hepatic impairment",
      "html": "<blockquote>\n<p>No dose adjustment with mild to moderate renal impairment</p>\n<p>Not recommended in Hepatic Impairment</p>\n</blockquote>"
     },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Risk of hypersensitivity reaction - counsel patients</p>\n<p>Not in active infection (incl. localised)</p>\n<p>Serious infection risk (bacterial, fungal, viral &amp; opportunistic)\n- caution chronic/recurrent infection hx. Risk colonic perforation\n(caution diverticulitis) - promptly evaluate abdominal symptoms</p>\n<p>Is associated with low ANC and/or platelets plus abnormal LFT’s – use\ncontraindicated if ANC &lt;2.0 x</p>\n<p>10<sup>9</sup>cells/L, Platelets &lt; 150 x 10<sup>9</sup>cells/L,\ninitiating</p>\n<p>AST/ALT 1.5 X ULN or halting at x5 ULN)</p>\n<p>Manufacturer advises avoid with live vaccines</p>\n</blockquote>"
+    },
     "pregnancy-breastfeeding": {
      "label": "Pregnancy & Breastfeeding",
      "html": "<blockquote>\n<p>Women of childbearing potential to use an effective contraception\nduring treatment and upto 3 months after treatment</p>\n<p>Should not be used unless clinical condition of the women requires\ntreatment with sarilumab</p>\n<p>Breastfeeding Benefit to mother vs risk to infant</p>\n</blockquote>"
@@ -1210,6 +1262,10 @@
     "renal-hepatic-impairment-elderly": {
      "label": "Renal/hepatic impairment/Elderly",
      "html": "<blockquote>\n<p>No dose adjustment</p>\n</blockquote>"
+    },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>C/I Severe, active infection</p>\n<p>Caution chronic or recurrent infection or persistent candidiasis</p>\n<p>Inflammatory bowel disease – not recommended</p>\n<p>Latex allergy - risk of reaction due to needle cap</p>\n<p>Risk of neutropenia</p>\n<p>Risk of hypersensitivity reaction</p>\n<p>Live vaccines CI</p>\n</blockquote>"
     },
     "pregnancy-breastfeeding-manufacturer-advise": {
      "label": "Pregnancy & Breastfeeding: (manufacturer advise)",
@@ -1261,6 +1317,10 @@
     "nice-guidance": {
      "label": "NICE Guidance",
      "html": "<blockquote>\n<p>RA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/TA375\">TA375</a> and <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta247\">TA247</a> (after TNF\nfailure if rituximab CI/failed)</p>\n<p>JIA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta373\"><u>TA373</u></a> ,\n<u>TA238</u></p>\n<p>GCA: <a target=\"_blank\" rel=\"noopener\" href=\"https://www.nice.org.uk/guidance/ta518\"><u>TA518</u></a></p>\n</blockquote>\n<p> <a target=\"_blank\" rel=\"noopener\" href=\"https://www.england.nhs.uk/publication/clinical-commissioning-policy-anakinra-tocilizumab-for-the-treatment-of-adult-onset-stills-disease-refractory-to-second-line-therapy-adults/?UNLID=73189642220231028215134\"><u>Clinical\nCommissioning Policy: Anakinra/tocilizumab for the treatment of\nAdult-Onset Still’s Disease refractory to second-line therapy (adults)\n(170056P)</u></a></p>"
+    },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Hypersensitivity to the active substance or to any of the\nexcipients</p>\n<p>Active tuberculosis (TB) or other severe infections such as sepsis,\nand opportunistic infections</p>\n<p>Active hepatic disease or impairment ● Preexisting neutropenia</p>\n<p>Gastro-intestinal ulcers or Diverticulitis</p>\n<p>Interstitial lung disease (increased risk of infection; reports of\ndeveloping pneumonitis and fibrosis)</p>\n<p>Don’t initiate if ANC less than 2 x 10 9 /litre</p>\n<p>Don’t initiate if hepatic enzymes more than 5 times ULN</p>\n<p>Caution with platelet count 100 x 10 3 /ul</p>\n<p>Manufacturer advises avoid use with live vaccines</p>\n<p><strong>● Drug interactions:</strong> Drugs metabolized by CYP450\n:</p>\n<p>statins , calcium channel blockers, theophylline, warfarin,\nphenytoin, ciclosporin, or benzodiazepines - dose increases may be\nrequired to maintain therapeutic effect of these medicines.</p>\n<p>*All patients treated with RoActemra should be given the Patient\nAlert Card.</p>\n</blockquote>"
     },
     "elderly": {
      "label": "Elderly",
@@ -1325,6 +1385,10 @@
      "label": "Renal/hepatic Impairment",
      "html": "<blockquote>\n<p>Not studied : no recommendations can be made</p>\n</blockquote>"
     },
+    "warnings-contraindications-significant-drug-interactions": {
+     "label": "Warnings/Contraindications/Significant drug interactions",
+     "html": "<blockquote>\n<p>Caution in active or chronic infection</p>\n<p>Caution if history of malignancy</p>\n<p>Latex allergy - avoid pre-filled syringe</p>\n<p>Risk of hypersensitivity reaction</p>\n<p>Manufacturer advise to avoid use of live vaccine</p>\n</blockquote>"
+    },
     "pregnancy-breastfeeding-manufacturer-advise": {
      "label": "Pregnancy & Breastfeeding: (manufacturer advise)",
      "html": "<blockquote>\n<p>Women of childbearing potential to use contraception during and for\nat least 15 weeks after treatment .</p>\n<p>No data for use in pregnancy</p>\n<p>Breastfeeding safety unknown</p>\n</blockquote>"
@@ -1384,6 +1448,10 @@
      "label": "Hepatic impairment/elderly",
      "html": "No dose adjustment required (higher risk GI effects in elderly)"
     },
+    "warnings-contra-indications-significant-drug-interactions": {
+     "label": "Warnings/Contra-indications/Significant drug interactions",
+     "html": "<p>GI side effects common in first 2- 4 weeks</p>\n<p>Use associated with insomnia and depression - caution in patients\nprior hx, counsel re reporting suicidal ideation/mood change</p>\n<p>Contains lactose - avoid in <mark>Lapp lactase deficiency or\nglucose-galactose malabsorption</mark></p>"
+    },
     "pregnancy-breastfeeding": {
      "label": "Pregnancy & Breastfeeding",
      "html": "<p>No data but manufacturer recommends women of childbearing\npotential should use an effective method of contraception to prevent\npregnancy during treatment.</p>\n<p>Contraindicated in pregnancy and breast-feeding</p>"
@@ -1434,6 +1502,10 @@
     "hepatic-impairment-elderly": {
      "label": "Hepatic impairment/elderly",
      "html": "<p>Elderly people or those with mild or moderate hepatic impairment:\nno dose adjustment required.</p>\n<p>Severe hepatic impairment: no data available and not\nrecommended.</p>"
+    },
+    "warnings-contra-indications-significant-drug-interactions": {
+     "label": "Warnings/Contra-indications/Significant drug interactions",
+     "html": "<p>Avoid concomitant use with strong CYP3A4 enzyme inducers (e.g.,\ncarbamazepine, enzalutamide, mitotane, phenobarbital, phenytoin,\nrifampicin, and St. John's Wort)</p>\n<p>Contraindicated if neutrophil count &lt;1.5 x 10<sup>9</sup>/litre,\nlymphocyte count &lt;0.5 x 10<sup>9</sup>/litre, or total WCC &lt; 3.5 x\n10<sup>9</sup>/litre.</p>\n<p>There is a known association with hepatic dysfunction. Avoid in\nsevere liver disease (Child-Pugh Class C).</p>\n<p>Not studied in patients with eGFR&lt;15 or requiring dialysis</p>\n<p>Not studied in patients with severe disease manifested as alveolar\nhaemorrhage</p>\n<p>Pneumocystis jirovecii pneumonia prophylaxis is recommended.</p>"
     },
     "pregnancy-breastfeeding": {
      "label": "Pregnancy & Breastfeeding",
@@ -1486,6 +1558,10 @@
      "label": "Hepatic Impairment",
      "html": "<p>Mild/mod - no dose ↓</p>\n<p>Severe - do not use in severe cirrhosis (Childs Pugh C)</p>"
     },
+    "warnings-contra-indications-significant-drug-interactions": {
+     "label": "Warnings/Contra-indications/Significant drug interactions",
+     "html": "<p>MHRA have issued warnings of the association with JAK inhibitors\nand venous thromobo-embolism (VTE), major adverse cardiovascular events\n(MACE) and cancer.</p>\n<p>Unless there are no suitable alternative DMARDs, MHRA advises avoid\nin patients who:</p>\n<p>• Are aged 65 years or olde</p>\n<p>• Are current or past long-time smokers</p>\n<p>• Have other cardiovascular disease or malignancy risk factors</p>\n<p>Advised use with caution in patients with risk factors for VTE</p>\n<p>Use lower doses in patients with risk factors</p>\n<p>Use with caution in patients with diverticular disease, and those on\nlong-term medicines associated with increased risk of diverticulitis\n(NSAIDs, corticosteroids, and opioids).Contraindication absolute\nlymphocytes count &lt;0.5 x 10<sup>9</sup>cells/L, ANC &lt;1.0 x\n10<sup>9</sup>cells/L, Hb &lt;8g/dL Risk DVT/PE - use with caution in\nhigh risk individuals (older age, obesity, PMH DE/PVT, surgery and\nimmobile)</p>\n<p>Risk of herpes virus reactivation</p>\n<p>Contraindicated in active TB and other serious infection.</p>"
+    },
     "pregnancy-breastfeeding": {
      "label": "Pregnancy & Breastfeeding",
      "html": "<p>Manufacturer advises women of child-bearing potential to use\ncontraception during treatment and at least 1 week after stopping.</p>\n<p>Avoid in pregnancy and breast-feeding</p>"
@@ -1536,6 +1612,10 @@
     "hepatic-impairment": {
      "label": "Hepatic Impairment",
      "html": "<p>Mild/mod - no dose ↓</p>\n<p>Severe - do not use – (Child Pugh C)</p>"
+    },
+    "warnings-contra-indications-significant-drug-interactions": {
+     "label": "Warnings/Contra-indications/Significant drug interactions",
+     "html": "<p>MHRA have issued warnings of the association with JAK inhibitors\nand VTE, MACE and cancer.</p>\n<p>Unless there are no suitable alternative DMARDs, MHRA advises avoid\nin patients who:</p>\n<ul>\n<li><p>Are aged 65 years or olde</p></li>\n<li><p>Are current or past long-time smokers</p></li>\n<li><p>Have other cardiovascular disease or malignancy risk\nfactors</p></li>\n</ul>\n<p>Advised use with caution in patients with risk factors for VTE</p>\n<p>Use lower doses in patients with risk factors</p>\n<p>Use with caution in patients with diverticular disease, and those on\nlong-term medicines associated with increased risk of diverticulitis\n(NSAIDs, corticosteroids, and opioids).</p>\n<p>Contraindication absolute lymphocytes count &lt;0.5 x\n10<sup>9</sup>cells/L, ANC &lt;1.0 x 10<sup>9</sup>cells/L, Hb\n&lt;8g/dL</p>\n<p>Contraindicated in active TB and other serious infection.</p>\n<p>Risk of herpes virus reactivation</p>\n<p>Contains lactose</p>"
     },
     "pregnancy-breastfeeding": {
      "label": "Pregnancy & Breastfeeding",
@@ -1588,6 +1668,10 @@
      "label": "Hepatic Impairment",
      "html": "Avoid in patients with cirrhosis"
     },
+    "warnings-contra-indications-significant-drug-interactions": {
+     "label": "Warnings/Contra-indications/Significant drug interactions",
+     "html": "<p>C/I ALC &lt;0.75 x 10<sup>9</sup>cells/L, ANC &lt;1.0 x\n10<sup>9</sup>cells/L, Hb &lt;9g/dL</p>\n<p>Gastrointestinal perforation – possible increased risk. Use with\ncaution in those with increased risk (e.g. diverticulosis); promptly\nevaluate abdominal symptoms</p>\n<p>Interstitial lung disease – possible increased risk. Increased risk\nof infections in people with underlying lung disease.</p>\n<p>Fractures have been observed in patients treated with tofacitinib-\nconsider other risk fractures for fracture.</p>\n<p>Hypoglycaemia following initiation of tofacitinib in patients on\nmedication for diabetes.</p>\n<p>Reactivation of herpes virus</p>\n<p>Contains lactose - avoid <mark>in Lapp lactase deficiency or\nglucose-galactose malabsorption</mark></p>"
+    },
     "pregnancy-breastfeeding": {
      "label": "Pregnancy & Breastfeeding",
      "html": "<p>No data. Manufacturer recommends women of child-bearing potential\nto use contraception during treatment and at least 4 weeks after\nstopping.</p>\n<p>Avoid in pregnancy and breast-feeding</p>"
@@ -1638,6 +1722,10 @@
     "hepatic-impairment": {
      "label": "Hepatic Impairment",
      "html": "<p>No dose adjustment for mild or moderate impairment.</p>\n<p>Avoid in severe impairment ( Child Pugh C).</p>"
+    },
+    "warnings-contra-indications-significant-drug-interactions": {
+     "label": "Warnings/Contra-indications/Significant drug interactions",
+     "html": "<p>MHRA have issued warnings of the association with JAK inhibitors\nand VTE, MACE and cancer.</p>\n<p>Unless there are no suitable alternative DMARDs, MHRA advises avoid\nin patients who:</p>\n<ul>\n<li><p>Are aged 65 years or older</p></li>\n<li><p>Are current or past long-time smokers</p></li>\n<li><p>Have other cardiovascular disease or malignancy risk\nfactors</p></li>\n</ul>\n<p>Advised use with caution in patients with risk factors for VTE</p>\n<p>Contraindicated if ALC &lt; 0.5 x 10<sup>9</sup> cells/litre; ANC\n&lt; 1 x 10<sup>9</sup> cells/litre; Hb&lt; 8 g/dL; active serious\ninfection including localised infection; active tuberculosis.</p>\n<p>Gastrointestinal perforation – possible increased risk. Use with\ncaution in those with increased risk (e.g. diverticulosis); promptly\nevaluate abdominal symptoms</p>\n<p>Elevation of liver enzymes reported.</p>\n<p>Reactivation of herpes virus</p>\n<p>Contains lactose - avoid <mark>in Lapp lactase deficiency or\nglucose-galactose malabsorption</mark></p>\n<p>Food or drink containing grapefruit should be avoided during\ntreatment with upadacitinib</p>"
     },
     "pregnancy-breastfeeding": {
      "label": "Pregnancy & Breastfeeding",

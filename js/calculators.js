@@ -17,6 +17,13 @@ const num = (form, name) => {
 const STATUS_TEXT = { stop: "STOP", caution: "CHECK", ok: "OK", missing: "–", info: "INFO" };
 const statusPill = (s) => `<span class="status ${s}">${STATUS_TEXT[s] || s}</span>`;
 const today = () => new Date().toISOString().slice(0, 10);
+const VERDICT_ICON = {
+  stop: '<svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"></path><path d="M12 10v4M12 17v.5"></path></svg>',
+  caution: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16v.5"></path></svg>',
+  ok: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l3 3 5-6"></path></svg>',
+  info: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5M12 8v.5"></path></svg>',
+};
+const verdict = (level, title, text) => `<div class="verdict ${level === "missing" ? "info" : level === "warn" ? "caution" : level}">${VERDICT_ICON[level === "missing" ? "info" : level === "warn" ? "caution" : level]}<div><h2>${title}</h2><p>${text}</p></div></div>`;
 
 function field(name, label, { type = "number", hint = "", step = "any", value = "", attrs = "", wide = false } = {}) {
   return `<div class="field${wide ? " wide" : ""}"><label for="f-${name}">${label}${hint ? ` <span class="hint">${hint}</span>` : ""}</label>
@@ -81,14 +88,15 @@ function renderBloods(el, params, state) {
       }
     }
     const r = checkBloods(drug, values, base);
+    const n = r.results.filter((x) => x.status === "stop").length;
     const head = {
-      stop: ["stop", "<b>Stop criterion met.</b> Withhold the drug and contact the local rheumatology service."],
-      caution: ["warn", "<b>Check required.</b> See the detail below and the guideline page."],
-      ok: ["ok", "<b>No blood stop criteria met</b> for the values entered. Also look at trends and local reference ranges."],
-      missing: ["info", "Enter the latest results. Leave a box blank if the test wasn't done."],
+      stop: ["Stop criterion met", `Withhold ${set.name.toLowerCase()} and contact the local rheumatology service. ${n} ${n === 1 ? "criterion" : "criteria"} triggered.`],
+      caution: ["Check required", "See the detail below and the guideline page."],
+      ok: ["No stop criteria met", "For the values entered. Also look at trends and local reference ranges."],
+      missing: ["Enter the latest results", "Leave a box blank if the test wasn't done."],
     }[r.overall];
     el.querySelector("#out").innerHTML = `
-      <div class="notice ${head[0]}">${head[1]}</div>
+      ${verdict(r.overall, head[0], head[1])}
       <div class="card"><table class="data"><thead><tr><th>Test</th><th>Result</th><th>Detail</th></tr></thead><tbody>
         ${r.results.map((x) => `<tr><td>${esc(x.label)}</td><td>${statusPill(x.status)}</td><td>${esc(x.detail)}</td></tr>`).join("")}
       </tbody></table>
@@ -116,7 +124,7 @@ function renderRenal(el, params, state) {
     const egfr = egfrCkdEpi2021({ age, creatinineUmol, sex });
     const ids = Object.keys(RENAL_RULES).sort((a, b) => (b === sel) - (a === sel));
     el.querySelector("#out").innerHTML = `
-      <div class="kpis">
+      <div class="kpis" style="grid-template-columns:repeat(2,minmax(0,1fr))">
         <div class="kpi"><small>Creatinine clearance (Cockcroft–Gault)</small><span class="big">${fmt(crcl)}</span> mL/min</div>
         <div class="kpi"><small>eGFR (CKD-EPI 2021)</small><span class="big">${fmt(egfr)}</span> mL/min/1.73m²</div>
       </div>
@@ -136,6 +144,7 @@ function renderRenal(el, params, state) {
 
 function renderDosing(el, params, state) {
   const focus = params.get("drug");
+  el.classList.remove("calc-grid");
   el.innerHTML = `<form class="card" id="cform"><div class="form">
       ${field("weight", "Actual body weight", { hint: "kg" })}
       ${field("mtx", "Methotrexate weekly dose", { hint: "mg (oral)" })}
@@ -145,13 +154,13 @@ function renderDosing(el, params, state) {
     const w = num(form, "weight");
     const hcq = hcqRegimens(w), aza = azathioprineDose(w), cic = ciclosporinDose(w), toc = tocilizumabIvDose(w);
     const ifx3 = infliximabDose(w, 3), ifx5 = infliximabDose(w, 5), mtx = methotrexateTablets(num(form, "mtx"));
-    const sec = (id, title, html) => `<section class="card" style="margin-bottom:12px;${focus === id ? "border-color:var(--brand);border-width:2px" : ""}" id="d-${id}">
-      <h2 style="margin-top:0">${title}</h2>${html}<p class="small">${pageLink(state, id)}</p></section>`;
+    const sec = (id, title, html) => `<section class="card" style="margin-bottom:12px;${focus === id ? "border-color:var(--blue);border-width:2px" : ""}" id="d-${id}">
+      <h2 style="margin-bottom:8px">${title}</h2>${html}<p class="small">${pageLink(state, id)}</p></section>`;
     const need = '<p class="muted">Enter weight.</p>';
     el.querySelector("#out").innerHTML = [
       sec("methotrexate", "Methotrexate (weekly)", mtx ? `
-        <p><span class="big">${fmt(mtx.tablets, 1)}</span> × 2.5 mg tablets <b>once weekly</b>${mtx.wholeTablets ? "" : ' <span class="chip stop">Not a whole number of 2.5 mg tablets</span>'}</p>
-        ${mtx.overMax ? '<div class="notice stop">Above the maximum recommended dose (30 mg weekly, oral or SC).</div>' : ""}
+        <p><span class="big">${fmt(mtx.tablets, 1)}</span> × 2.5 mg tablets <b>once weekly</b>${mtx.wholeTablets ? "" : ' <span class="status stop">Not a whole number of 2.5 mg tablets</span>'}</p>
+        ${mtx.overMax ? '<div class="notice red"><span>Above the maximum recommended dose (30 mg weekly, oral or SC).</span></div>' : ""}
         <p class="small">Prescribe 2.5 mg tablets only, and specify the day of the week. Co-prescribe folic acid, not taken on methotrexate day.</p>`
         : '<p class="muted">Enter the weekly dose.</p>'),
       sec("hydroxychloroquine", "Hydroxychloroquine", hcq ? `
@@ -166,7 +175,7 @@ function renderDosing(el, params, state) {
         <p>Start 1–2 mg/kg/day: <b>${fmt(cic.startLow)}–${fmt(cic.startHigh)} mg/day</b> in 2 divided doses for 6 weeks.</p>
         <p>Then increase by 25 mg every 2 weeks, up to a maximum of 3–4 mg/kg/day: <b>${fmt(cic.max3)}–${fmt(cic.max4)} mg/day</b>.</p>` : need),
       sec("tocilizumab", "Tocilizumab IV (RA)", toc ? `
-        <p>8 mg/kg every 4 weeks = ${fmt(toc.raw)} mg → <span class="big">${fmt(toc.dose)} mg</span>${toc.capped ? ' <span class="chip warn">capped at 800 mg</span>' : ""}</p>` : need),
+        <p>8 mg/kg every 4 weeks = ${fmt(toc.raw)} mg → <span class="big">${fmt(toc.dose)} mg</span>${toc.capped ? ' <span class="status caution">capped at 800 mg</span>' : ""}</p>` : need),
       sec("infliximab", "Infliximab IV", ifx3 ? `
         <table class="data"><thead><tr><th>Indication</th><th>Dose</th><th>100 mg vials</th></tr></thead><tbody>
         <tr><td>RA: 3 mg/kg at 0, 2, 6 weeks then 8-weekly</td><td>${fmt(ifx3.dose)} mg</td><td>${ifx3.vials}</td></tr>
@@ -180,16 +189,17 @@ function renderDosing(el, params, state) {
 
 function renderSteroids(el, params, state) {
   const opts = Object.entries(STEROIDS).map(([id, s]) => [id, s.name]);
+  el.classList.remove("calc-grid");
   el.innerHTML = `
     <form class="card" id="cform">
-      <h2 style="margin-top:0">Dose and duration</h2>
+      <h2 style="margin-bottom:10px">Dose and duration</h2>
       <div class="form">
         ${select("drug", "Steroid", opts, "prednisolone")}
         ${field("mg", "Daily dose", { hint: "mg" })}
         ${field("weeks", "Taken so far", { hint: "weeks" })}
         ${field("expected", "Expected total course", { hint: "weeks, optional" })}
       </div>
-      <h2>Taper plan (example)</h2>
+      <h2 style="margin:18px 0 10px">Taper plan (example)</h2>
       <div class="form">
         ${field("tstart", "Start taper from", { hint: "mg prednisolone" })}
         ${field("tstep", "Reduce by", { hint: "mg", value: "5" })}
@@ -216,14 +226,14 @@ function renderSteroids(el, params, state) {
       target: num(form, "ttarget") ?? 0, startDate: form.tdate.value || null,
     });
     el.querySelector("#out").innerHTML = `
-      ${conv ? `<div class="card" style="margin-bottom:12px"><h2 style="margin-top:0">Equivalent doses</h2>
+      ${conv ? `<div class="card" style="margin-bottom:12px"><h2 style="margin-bottom:8px">Equivalent doses</h2>
         <table class="data"><tbody>${conv.map((c) => `<tr ${c.id === drug ? 'style="font-weight:600"' : ""}><td>${esc(c.name)}</td><td>${fmt(c.mg, 2)} mg</td></tr>`).join("")}</tbody></table>
         <p class="small muted">Anti-inflammatory equivalence (BNF): prednisolone 5 mg ≈ hydrocortisone 20 mg ≈ methylprednisolone 4 mg ≈ dexamethasone 750 micrograms ≈ deflazacort 6 mg.</p></div>` : ""}
-      ${flags ? `<div class="card" style="margin-bottom:12px"><h2 style="margin-top:0">Safety actions</h2>
+      ${flags ? `<div class="card" style="margin-bottom:12px"><h2 style="margin-bottom:8px">Safety actions</h2>
         ${flags.length ? `<table class="data"><tbody>${flags.map((f) => `<tr><td>${statusPill(f.level)}</td><td>${esc(f.text)}<br><small class="muted">${esc(f.source)}</small></td></tr>`).join("")}</tbody></table>`
           : '<p class="muted">No flags at this dose and duration.</p>'}
         <p class="small">${pageLink(state, "corticosteroids")}</p></div>` : ""}
-      ${rows.length ? `<div class="card"><h2 style="margin-top:0">Example taper</h2>
+      ${rows.length ? `<div class="card"><h2 style="margin-bottom:8px">Example taper</h2>
         <p class="small muted">Tailor the speed of reduction to disease activity and comorbidities. Below about 5 mg, consider the risk of adrenal insufficiency.</p>
         <table class="data"><thead><tr><th>From</th><th>Day</th><th>Daily dose</th></tr></thead><tbody>
         ${rows.map((r) => `<tr><td>${date(r.date)}</td><td>${r.day}</td><td>${fmt(r.dose, 1)} mg</td></tr>`).join("")}
@@ -241,7 +251,8 @@ const PAGE_TO_PERIOP = {
 function renderPeriop(el, params, state) {
   const p = params.get("drug");
   const sel = PAGE_TO_PERIOP[p] || (PERIOP[p] ? p : "adalimumab");
-  el.innerHTML = `<div class="notice info">csDMARDs generally do not need to be stopped peri-operatively; discuss with the patient's rheumatology consultant if concerned. Check whether glucocorticoid cover is needed.</div>
+  el.classList.remove("calc-grid");
+  el.innerHTML = `<div class="notice blue" style="margin-bottom:12px"><span>csDMARDs generally do not need to be stopped peri-operatively; discuss with the patient's rheumatology consultant if concerned. Check whether glucocorticoid cover is needed.</span></div>
     <form class="card" id="cform"><div class="form">
       ${select("drug", "Biologic / tsDMARD", Object.entries(PERIOP).map(([id, d]) => [id, d.name + (d.gap ? " (no guideline data)" : "")]), sel, { wide: true })}
       ${field("last", "Date of last dose", { type: "date", value: today() })}
@@ -253,21 +264,21 @@ function renderPeriop(el, params, state) {
     const out = el.querySelector("#out");
     if (!plan) { out.innerHTML = '<p class="muted">Enter the date of the last dose.</p>'; return; }
     if (plan.gap) {
-      out.innerHTML = `<div class="notice warn"><b>${esc(plan.drug.name)}:</b> the regional guideline table has no peri-operative data yet. Discuss with rheumatology well before surgery.</div>`;
+      out.innerHTML = verdict("caution", "No guideline data yet", `${esc(plan.drug.name)}: the regional guideline table has no peri-operative row. Discuss with rheumatology well before surgery.`);
       return;
     }
     const d = plan.drug;
-    const fit = { in: ["ok", "The planned date falls within the recommended window."],
-      early: ["stop", "The planned date is <b>earlier</b> than the recommended window. Consider rescheduling or discuss with rheumatology."],
-      late: ["warn", "The planned date is <b>after</b> the window, so the patient may miss doses and flare. Discuss whether to give the next dose."] }[plan.fit];
+    const fit = { in: ["ok", "Within the recommended window", "The planned surgery date falls in the window after the last dose."],
+      early: ["stop", "Too early after the last dose", "The planned date is before the recommended window. Consider rescheduling or discuss with rheumatology."],
+      late: ["caution", "After the window", "The patient may miss doses and flare. Discuss whether to give the next dose."] }[plan.fit];
     out.innerHTML = `
-      ${fit ? `<div class="notice ${fit[0]}">${fit[1]}</div>` : ""}
+      ${fit ? verdict(fit[0], fit[1], fit[2]) : verdict("info", "Surgery window", `Schedule surgery ${d.months ? `in months ${d.months[0]}–${d.months[1]}` : `in week ${d.week}`} after the last dose.`)}
       <div class="kpis">
         <div class="kpi"><small>Dosing interval</small><b>${esc(d.interval)}</b></div>
         <div class="kpi"><small>Schedule surgery ${d.months ? `months ${d.months[0]}–${d.months[1]}` : `in week ${d.week}`} after last dose</small><b>${date(plan.from)}<br>to ${date(plan.to)}</b></div>
         <div class="kpi"><small>5 half-lives (${d.halfLifeDays >= 1 ? fmt(d.halfLifeDays, 1) + " days" : fmt(d.halfLifeDays * 24, 1) + " hours"} each) reached</small><b>${date(plan.fiveHalfLives)}</b></div>
       </div>
-      ${d.extra ? `<div class="notice warn">${esc(d.extra)}</div>` : ""}
+      ${d.extra ? `<div class="notice amber"><span>${esc(d.extra)}</span></div>` : ""}
       <p class="small">Restart only when the wound has healed and there is no infection. The interruption period should be agreed with the rheumatologist well in advance; higher-risk surgery (e.g. colonic) may warrant longer.</p>
       <p class="small">${pageLink(state, "surgery")}</p>`;
   });
@@ -294,11 +305,11 @@ function renderSchedule(el, params, state) {
     const s = SCHEDULES[k];
     el.querySelector("#out").innerHTML = rows.length ? `<div class="card">
       <p class="small">FBC, U&amp;E and LFT${k === "cyclosporine" ? " plus BP" : ""}. More frequent monitoring if higher risk of toxicity or clinically indicated. After any dose increase, restart fortnightly checks.</p>
-      ${s.extra ? `<div class="notice info small">${esc(s.extra)}</div>` : ""}
+      ${s.extra ? `<div class="notice blue small"><span>${esc(s.extra)}</span></div>` : ""}
       <table class="data"><thead><tr><th>#</th><th>Date</th><th>Phase</th></tr></thead><tbody>
       ${rows.map((r, i) => `<tr><td>${i + 1}</td><td>${date(r.date)}</td><td>${esc(r.phase)}</td></tr>`).join("")}
       </tbody></table>
-      <div class="actions"><button class="btn" type="button" id="copy">Copy dates</button><span id="copied" class="small muted" role="status"></span></div>
+      <div class="row" style="margin-top:10px"><button class="btn sm" type="button" id="copy">Copy dates</button><span id="copied" class="small muted" role="status"></span></div>
       <p class="small">${p ? pageLink(state, p) : ""}</p></div>` : '<p class="muted">Enter a start date.</p>';
     el.querySelector("#copy")?.addEventListener("click", () => copyDates(rows, el));
   });
@@ -319,14 +330,20 @@ export const CALCS = [
   { id: "dosing", icon: "⚖", title: "Weight-based dosing", desc: "HCQ mg/kg, azathioprine, ciclosporin, tocilizumab, infliximab, methotrexate tablets", render: renderDosing },
   { id: "steroids", icon: "◐", title: "Steroid converter & taper", desc: "Equivalent doses, bone/adrenal/vaccine flags, taper plan", render: renderSteroids },
   { id: "periop", icon: "✚", title: "Peri-operative planner", desc: "When to schedule surgery after the last biologic or JAK dose", render: renderPeriop },
-  { id: "schedule", icon: "▦", title: "Monitoring schedule", desc: "Blood test dates for csDMARDs, with calendar export", render: renderSchedule },
+  { id: "schedule", icon: "▦", title: "Monitoring schedule", desc: "Blood test dates for csDMARDs; copy to a letter or calendar", render: renderSchedule },
 ];
 
 export function renderCalc(main, calc, params, state) {
+  const drug = params.get("drug");
+  const page = drug && state.pages.get(drug);
   main.innerHTML = `
-    <div class="crumbs"><a href="#calc">Calculators</a></div>
-    <h1>${esc(calc.title)}</h1>
-    <div class="notice warn small calc-intro">Add-on tool. Prototype, not validated, and not a medical device. Always read the guideline text and SmPC and use clinical judgement. Nothing you enter is stored or sent.</div>
-    <div id="calc-body"></div>`;
+    <div class="stack-lg">
+      <div class="stack" style="gap:8px">
+        <nav class="small muted" aria-label="Breadcrumb"><a href="#calc" style="color:var(--muted)">Calculators</a>${page ? ` / <a href="#page--${esc(drug)}" style="color:var(--muted)">${esc(page.title)}</a>` : ""}</nav>
+        <div class="row"><h1>${esc(calc.title)}</h1><span class="pill grey">Add-on tool</span></div>
+        <p class="small muted">Prototype: not validated and not a medical device. Read the guideline text and SmPC and use clinical judgement. Nothing you enter is stored or sent.</p>
+      </div>
+      <div id="calc-body" class="calc-grid"></div>
+    </div>`;
   calc.render(main.querySelector("#calc-body"), params, state);
 }

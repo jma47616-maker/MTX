@@ -55,18 +55,26 @@ def bundle_data():
     for p in guideline["pages"]:
         for k, v in media.items():
             p["html"] = p["html"].replace(k, v)
-    data = {"guideline": guideline, "resources": json.loads(read("content/resources.json"))}
+    data = {
+        "guideline": guideline,
+        "resources": json.loads(read("content/resources.json")),
+        "national": json.loads(read("content/national.json")),
+        "pregnancy": json.loads(read("content/national-pregnancy.json")),
+    }
     return json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
 
 def main(out_path):
     index = read("index.html")
     title = re.search(r"<title>.*?</title>", index).group(0)
+    fonts = re.search(r'<link rel="stylesheet" href="https://fonts\.googleapis\.com[^>]*>', index).group(0)
     body = re.search(r"<body>(.*)</body>", index, re.S).group(1)
     body = re.sub(r'\s*<script type="module"[^>]*></script>', "", body)
     body = body.replace('src="icons/icon.svg"', f'src="{data_uri("icons/icon.svg", "image/svg+xml")}"')
     html = "\n".join([
         title,
+        '<meta name="claude:viewport-fit-sides" content="cover">',
+        fonts,
         f"<style>\n{read('css/app.css')}\n</style>",
         body.strip(),
         f"<script>window.__DMARD_DATA__ = {bundle_data()};</script>",

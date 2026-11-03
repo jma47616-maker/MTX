@@ -14,7 +14,8 @@ See [PLAN.md](PLAN.md) for the project plan and governance steps.
 
 | Area | Contents |
 |---|---|
-| Drug pages | 10 csDMARDs, 15 biologics, 6 tsDMARDs from the regional guideline, plus placeholder pages for gaps (bimekizumab, deucravacitinib, voclosporin, anifrolumab, tacrolimus) |
+| Drug monographs | 10 csDMARDs, 15 biologics, 6 tsDMARDs from the regional guideline, laid out in BNF section order, plus placeholder pages for gaps (bimekizumab, deucravacitinib, voclosporin, anifrolumab, tacrolimus) |
+| National guidance layer | `content/national.json` (BSR 2025 csDMARD key points, BSR 2019 biologic safety, MHRA 2023 JAK advice, Green Book) shown on each monograph and on the "National guidance" page; `content/national-pregnancy.json` (BSR 2023 pregnancy and breastfeeding recommendations, drug by drug) shown in each monograph's pregnancy section. Items marked `verified: false` come from secondary summaries and need checking against the full guideline. |
 | Topics | Corticosteroids, surgery, vaccination & travel, pregnancy & breastfeeding, biologics overview, references |
 | Shared care | Links to the HNY and West Yorkshire APC pages |
 | National guidance | BSR 2025 csDMARD, BSR biologic safety (update due 2026), BSR pregnancy, Green Book, MHRA JAK advice, Steroid Emergency Card, eMC, NICE |
@@ -22,6 +23,10 @@ See [PLAN.md](PLAN.md) for the project plan and governance steps.
 | **Calculators (add-on)** | Blood result checker · renal function & renal dose advice · weight-based dosing · steroid converter, safety flags & taper · peri-operative planner · monitoring schedule (copy dates) |
 
 Each drug page links to the calculators that apply to it, with that drug already selected.
+
+## Design
+
+Mobile-first app (floating tab bar with a red centre button for calculators) that becomes a website with a top nav at 900px and above. Palette: steel blue fading to slate grey on headers and feature cards, red for actions and stop criteria, cool greys on white. Type: Source Sans 3, with Source Code Pro for thresholds and inputs. The design canvas with the approved mockups is at https://claude.ai/artifact/ULAsC1T51xv3BuvTFC1Wmb.
 
 ## Run locally
 

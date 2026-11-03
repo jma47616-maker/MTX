@@ -111,6 +111,8 @@ def extract_fields(fragment):
         if len(cells) < 2:
             continue
         label = clean_title(cells[0]).rstrip(":").strip()
+        # Long labels carry a footnote in brackets; keep the heading part.
+        label = re.split(r"\s*[:(]", label)[0].strip() if len(label) >= 60 else label
         if label and len(label) < 80:
             key = slug(label)
             fields.setdefault(key, {"label": label, "html": cells[1].strip()})
