@@ -64,14 +64,14 @@ def bundle_data():
     return json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
 
-def main(out_path):
+def main(out_path, standalone=False):
     index = read("index.html")
     title = re.search(r"<title>.*?</title>", index).group(0)
     fonts = re.search(r'<link rel="stylesheet" href="https://fonts\.googleapis\.com[^>]*>', index).group(0)
     body = re.search(r"<body>(.*)</body>", index, re.S).group(1)
     body = re.sub(r'\s*<script type="module"[^>]*></script>', "", body)
     body = body.replace('src="icons/icon.svg"', f'src="{data_uri("icons/icon.svg", "image/svg+xml")}"')
-    html = "\n".join([
+    parts = [
         title,
         '<meta name="claude:viewport-fit-sides" content="cover">',
         fonts,
@@ -79,7 +79,14 @@ def main(out_path):
         body.strip(),
         f"<script>window.__DMARD_DATA__ = {bundle_data()};</script>",
         f"<script>\n{bundle_js()}\n</script>",
-    ])
+    ]
+    if standalone:
+        # A complete document that opens from a double-click, no server needed.
+        icon = data_uri("icons/icon.svg", "image/svg+xml")
+        parts = ['<!doctype html>', '<html lang="en-GB">', '<head>', '<meta charset="utf-8">',
+                 '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',
+                 f'<link rel="icon" href="{icon}">', *parts[:4], '</head>', '<body>', *parts[4:], '</body>', '</html>']
+    html = "\n".join(parts)
     os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
@@ -87,4 +94,5 @@ def main(out_path):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "dist", "yorkshire-dmard-guide.html"))
+    args = [a for a in sys.argv[1:] if a != "--standalone"]
+    main(args[0] if args else os.path.join(ROOT, "dist", "yorkshire-dmard-guide.html"), standalone="--standalone" in sys.argv)

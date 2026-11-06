@@ -62,7 +62,8 @@ section, and they must be kept in step with the guideline text.
 ## Single-file build (claude.ai Artifact)
 
 ```bash
-python3 tools/build_artifact.py   # writes dist/yorkshire-dmard-guide.html
+python3 tools/build_artifact.py                # writes dist/yorkshire-dmard-guide.html (artifact)
+python3 tools/build_artifact.py --standalone dist/Yorkshire-DMARD-Guide.html   # double-click file to email
 ```
 
 This inlines the CSS, JS, content and images into one file. It runs without a
