@@ -332,3 +332,5 @@ table.data th { color: var(--muted); font-weight: 600; font-size: .78rem; }
 @media (max-width: 599px) {
   .sec > summary .hint { max-width: 38%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
+.list .ic { width: 40px; height: 40px; border-radius: 13px; display: flex; align-items: center; justify-content: center; flex: none; }
+.list .ic svg { width: 20px; height: 20px; }
